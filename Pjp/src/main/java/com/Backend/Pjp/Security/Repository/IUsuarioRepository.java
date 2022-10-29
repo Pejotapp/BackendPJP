@@ -1,6 +1,7 @@
 
 package com.Backend.Pjp.Security.Repository;
 
+import com.Backend.Pjp.Security.Entity.Usuario;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -13,4 +14,4 @@ public interface IUsuarioRepository extends JpaRepository<Usuario, Integer>{
     boolean existsByEmail(String email);
     
 }
-}
+

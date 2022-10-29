@@ -3,8 +3,9 @@ package com.Backend.Pjp.Service;
 
 import com.Backend.Pjp.Entity.Skills;
 import com.Backend.Pjp.Repository.SkillsRepository;
+import java.util.List;
 import javax.transaction.Transactional;
-import javax.validation.constraints.NegativeOrZero.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,8 @@
 
 package com.Backend.Pjp.Security.Service;
 
+import com.Backend.Pjp.Security.Entity.Rol;
+import com.Backend.Pjp.Security.Enums.RolNombre;
 import com.Backend.Pjp.Security.Repository.IRolRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;

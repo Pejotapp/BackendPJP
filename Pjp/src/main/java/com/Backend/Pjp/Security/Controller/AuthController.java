@@ -1,6 +1,9 @@
 
 package com.Backend.Pjp.Security.Controller;
 
+import com.Backend.Pjp.Security.Dto.JwtDto;
+import com.Backend.Pjp.Security.Dto.LoginUsuario;
+import com.Backend.Pjp.Security.Dto.NuevoUsuario;
 import com.Backend.Pjp.Security.Entity.Rol;
 import com.Backend.Pjp.Security.Entity.Usuario;
 import com.Backend.Pjp.Security.Enums.RolNombre;
@@ -11,9 +14,15 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties.Authentication;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

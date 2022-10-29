@@ -2,7 +2,8 @@
 package com.Backend.Pjp.Service;
 
 import com.Backend.Pjp.Entity.Trabajo;
-import javax.validation.constraints.NegativeOrZero.List;
+import java.util.List;
+
 
 
 public interface ITrabajoService {

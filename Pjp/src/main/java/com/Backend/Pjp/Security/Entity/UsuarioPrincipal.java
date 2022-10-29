@@ -2,8 +2,12 @@
 package com.Backend.Pjp.Security.Entity;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
-import javax.validation.constraints.NegativeOrZero.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 
 public class UsuarioPrincipal implements UserDetails {

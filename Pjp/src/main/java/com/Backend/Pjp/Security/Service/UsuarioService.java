@@ -1,6 +1,7 @@
 
 package com.Backend.Pjp.Security.Service;
 
+import com.Backend.Pjp.Security.Entity.Usuario;
 import com.Backend.Pjp.Security.Repository.IUsuarioRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;

@@ -4,6 +4,7 @@ package com.Backend.Pjp.Security.Dto;
 import java.util.Collection;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
 
 @Getter
 @Setter

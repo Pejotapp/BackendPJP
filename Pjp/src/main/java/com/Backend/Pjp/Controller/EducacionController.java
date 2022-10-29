@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.Backend.Pjp.Controller;
 
-import antlr.StringUtils;
+
 import com.Backend.Pjp.Entity.Educacion;
 import com.Backend.Pjp.Service.IEducacionService;
-import javax.validation.constraints.NegativeOrZero.List;
+import java.util.List;
+import org.apache.commons.lang3.StringUtils;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
