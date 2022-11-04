@@ -28,6 +28,8 @@ public class MainSecurity {
     @Autowired
     JwtEntryPoint jwtEntryPoint;
 
+  
+    
     @Bean
     public JwtTokenFilter jwtTokenFilter() {
         return new JwtTokenFilter();
@@ -50,11 +52,12 @@ public class MainSecurity {
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                .antMatchers("/**").permitAll()
+                .antMatchers("**").permitAll()
                 .anyRequest().authenticated();
 
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
+    
 }
